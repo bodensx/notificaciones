@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebSockets</title>
+</head>
+<body>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script>
+	var ws = io.connect('http://localhost:3000/');
+
+	ws.on("DameID",function(){
+		console.log("Dame tu id garapan");
+	});
+
+  </script>
+</body>
+</html>
